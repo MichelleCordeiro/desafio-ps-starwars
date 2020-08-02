@@ -1,54 +1,68 @@
 body {
-    font-family: "Arial";
-    background: url(background.jpg);
-    background-size: contain;
-    margin: 0;
-  }
-  .barrasup {
-    background: white;
-    padding: 0 30px 0 30px;
-  }
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .redessociais img {
-    margin-left: 20px;
-    /*Para garantir a exibição das logos redondas caso o background mude de cor */
-    border-radius: 100%;
-  }
-  .convite {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  .card {
-    background: white;
-    width: 800px;
-    text-align: center;
-    margin: 100px 0 60px 0;
-    padding: 60px 0 100px 0;
-
-  }
-  .card img {
-    height: 140px;
-  }
-  .convite h2 {
-    /*Resetando as margens do h2 e atribuindo margens*/
-    margin: 40px 0 30px 0;
-  }
-  .convite p {
-    /*Resetando as margens do paragrafo e atribuindo 70px a inferior*/
-    margin: 0 0 70px 0;
-    font-weight: 600; 
-  }
-  .linkbtt {
-    background: black;
-    color: yellow;
-    font-weight: 600;
-    padding: 20px 100px 20px 100px;
-    border-radius: 15px;
-    text-decoration: none;
-  }
+  font-family: "Arial";
+  background: url(img/background.jpg);
+  background-size: contain;
+  margin: 0;
+}
+.barrasup {
+  background: white;
+  padding: 0 30px 0 30px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.redessociais img {
+  margin-left: 20px;
+  /*Para garantir a exibição das logos redondas caso o background mude de cor */
+  border-radius: 100%;
+}
+.convite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  background: white;
+  width: 800px;
+  text-align: center;
+  margin: 70px 0 60px 0;
+  padding: 40px 0 30px 0;
+}
+.card img {
+  height: 140px;
+}
+.convite h2 {
+  /*Resetando as margens do h2 e atribuindo margens*/
+  margin: 30px 0 20px 0;
+}
+.convite p {
+  /*Resetando as margens do paragrafo e atribuindo 70px a inferior*/
+  margin: 0 0 50px 0;
+  font-weight: 600; 
+}
+.linkbtt {
+  background: black;
+  color: yellow;
+  font-weight: 600;
+  padding: 20px 100px 20px 100px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.sides {
+  margin-top: 40px;
+}
+.lightside {
+  border-radius: 80px 0 0 80px;
+}
+.lightside:hover {
+  box-shadow: 0 5px 70px 5px rgba(6, 98, 246, 0.75), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.darkside {
+  border-radius: 0 90px 90px 0;
+}
+.darkside:hover {
+  box-shadow: 15px 5px 50px 2px rgba(245, 2, 2, 0.618), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

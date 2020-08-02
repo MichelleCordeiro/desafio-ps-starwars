@@ -15,19 +15,35 @@
           <h1>Star Wars Club</h1>
         </div>
         <div class="redessociais">
-          <a href="https://www.instagram.com/" target="blank"><img src=".\img\instagram.jpg" alt="Logo do Instagram"></a>
-          <a href="https://www.facebook.com/" target="blank"><img src=".\img\facebook.jpg" alt="Logo do Facebook"></a>
+          <a href="https://www.instagram.com/" target="blank"><img src="img\instagram.jpg" alt="Logo do Instagram"></a>
+          <a href="https://www.facebook.com/" target="blank"><img src="img\facebook.jpg" alt="Logo do Facebook"></a>
         </div>
       </div>
     </div>
 
     <div class="convite">
       <div class="card" id="card">
-        <img src=".\img\vader.png" alt="Capacete de Dart Vader">
+        <img src="img\vader.png" alt="Capacete de Dart Vader">
         <h2>Bem-vindo(a) ao Star Wars Club!</h2>
         <p>Somos um fã clube da maior saga de todos os tempos e apaixonados <br> pelo universo Satr Wars! Além disso, organizamos encontros e eventos <br> para reunir os Jedi e Sith de todo o Brasil. Estamos em busca de novos <br> integrantes para expandir esse movimento, então não perca tempo:</p>
         <a class="linkbtt">QUERO ME JUNTAR À FORÇA</a>
+        <div class="sides">
+          <img class="lightside" src="img\light2.png" alt="Simbolo Lado Bom" title="Pressione e mantenha presionado" onmousedown="lgmouseDown()" onmouseup="mouseUp()">
+          <img class="darkside" src="img\dark2.png" alt="Simbolo Lado Negro" title="Ou pressione aqui"onmousedown="dkmouseDown()" onmouseup="mouseUp()">
+        </div>
       </div>
     </div>
+    <script>
+      /*Troca a imagem do background ao manter pressionado o mouse e ao soltar soltar*/
+      function lgmouseDown() {
+        document.body.style.background = "url('img/bglight.jpg')";
+      }
+      function dkmouseDown() {
+        document.body.style.background = "url('img/bgdark.jpg')";
+      }
+      function mouseUp() {
+        document.body.style.background = "url('img/background.jpg')";
+      }
+    </script>
   </body>
 </html>
